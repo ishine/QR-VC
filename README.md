@@ -1,9 +1,5 @@
 # LinearVC: Leveraging Self-Supervised Representations for Linear Disentanglement in One-Shot Voice Conversion
-
-One-shot voice conversion (VC) transforms the speaker identity of source speech into that of an arbitrary target using only a single utterance. Recent advancements in self-supervised learning (SSL) models, such as HuBERT and WavLM, have proven effective for one-shot VC tasks due to their ability to independently encode various speech attributes. However, previous disentanglement-based methods leveraging SSL features, such as K-means quantization (KQ) and vector quantization (VQ), primarily focus on extracting discrete content embeddings while suppressing speaker-specific information, underutilizing the full potential of SSL features. Similarly, KNN-VC utilizes SSL features by replacing each source feature with its nearest neighbor from the target speech but requires long target matching sets to ensure phonetic coverage, making it unsuitable for one-shot scenarios. To mitigate this, the Phoneme Hallucinator generates synthetic target data, though at the cost of significant computational overhead and increased model complexity.
-
-In this paper, we propose a novel disentanglement-based one-shot VC model that fully exploits the linear separability of SSL features. By employing K-means quantization and linear operations, our approach effectively disentangles speech attributes, capturing both content and speaker-specific information in a unified framework. Unlike prior methods, it eliminates reliance on long target matching sets or computationally intensive synthetic data generation, achieving high-quality voice conversion through reconstruction losses alone.
-
+In this paper, we propose a novel disentanglement-based one-shot VC model that leverages the linear separability of SSL features. Using only K-means quantization and linear operations, the model effectively disentangles speech attributes, capturing both content and speaker-specific information in a unified framework and achieving high-quality voice conversion with reconstruction losses alone.
 ---
 
 ## Key Features
