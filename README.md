@@ -25,13 +25,13 @@ LinearVC is an advanced voice conversion model that utilizes self-supervised lea
 
 1. **Clone the repository**:
 
-   '''bash
+   ```bash
    git clone https://github.com/simyoungjun/LinearVC.git
    cd LinearVC
-   '''
+   ```
 2. **Install dependencies**:
-    '''bash
+    ```bash
     pip install -r requirements.txt
-    '''
+    ```
 
 ### Steps
