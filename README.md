@@ -21,17 +21,32 @@ LinearVC is an advanced voice conversion model that utilizes self-supervised lea
 - PyTorch 1.10 or higher
 - CUDA (for GPU acceleration)
 
-### Steps
 
-1. **Clone the repository**:
+## Usage
 
-   ```bash
-   git clone https://github.com/simyoungjun/LinearVC.git
-   cd LinearVC
-   ```
-2. **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+### 1. Data Preprocessing
 
-### Steps
+#### a. Downsample Audio
+Use `utils/downsampling.py` to downsample audio files to 16kHz.
+
+```bash
+python utils/downsampling.py --in_dir [path_to_original_data] --out_dir [path_to_downsampled_data] --sr [sampling_rate]
+```
+#### b. Extract SSL Features 
+Use `preprocess_ssl.py` to extract features from the 6th layer of WavLM.
+```bash
+python preprocess_ssl.py --in_dir [path_to_original_data] --out_dir [path_to_downsampled_data] --sr [sampling_rate]
+
+```
+### 2. Model Training
+Train the LinearVC model using the preprocessed data.
+```bash
+python train.py --config config/config.json --model_dir [ckpt_save_dir_path] --model [model_name]
+```
+
+### 3. Voice Conversion
+Perform voice conversion using the trained model.
+```bash
+python convert.py --config ckptdir/config.json --ptfile [checkpoint_pt_file] --src_path [source.wav] --tgt_path [target.wav] --outdir [convert_output_dir]
+
+```
