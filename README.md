@@ -3,9 +3,9 @@
 In this paper, we propose a novel disentanglement-based one-shot VC model that leverages the linear separability of SSL features. Using only K-means quantization and linear operations, the model effectively disentangles speech attributes, capturing both content and speaker-specific information in a unified framework and achieving high-quality voice conversion with reconstruction losses alone.
 
 
-## Architecture
+## Overview of QR-VC
 
-### 1. Full Model Pipeline
+### 1. Overall architecture
 
 <p align="center">
   <img src="./images/model_eusipco_2.png" width="600"/>
@@ -17,7 +17,7 @@ In this paper, we propose a novel disentanglement-based one-shot VC model that l
   <img src="./images/disentangler.png" width="500"/>
 </p>
 
-## Results
+## Evaluation Results
 
 <p align="center">
   <img src="./images/QR-VC_results.png" width="1000"/>
