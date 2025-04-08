@@ -8,19 +8,19 @@ In this paper, we propose a novel disentanglement-based one-shot VC model that l
 ### 1. Linear Disentangler
 
 <p align="center">
-  <img src="./images/linear_disentangler.png" width="600"/>
+  <img src="./images/disentangler.png" width="600"/>
 </p>
 
 ### 2. Full Model Pipeline
 
 <p align="center">
-  <img src="./images/model_pipeline.png" width="950"/>
+  <img src="./images/model_eusipco_2.png" width="950"/>
 </p>
 
 ## Results
 
 <p align="center">
-  <img src="./images/eval_table.png" width="1000"/>
+  <img src="./images/QR-VC_results.png" width="1000"/>
 </p>
 
 ---
