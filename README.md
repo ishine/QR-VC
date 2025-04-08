@@ -14,7 +14,7 @@ In this paper, we propose a novel disentanglement-based one-shot VC model that l
 ### 2. Linear Disentangler
 
 <p align="center">
-  <img src="./images/disentangler.png" width="600"/>
+  <img src="./images/disentangler.png" width="500"/>
 </p>
 
 ## Results
