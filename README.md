@@ -5,13 +5,13 @@ In this paper, we propose a novel disentanglement-based one-shot VC model that l
 
 ## Architecture
 
-### 2. Full Model Pipeline
+### 1. Full Model Pipeline
 
 <p align="center">
-  <img src="./images/model_eusipco_2.png" width="950"/>
+  <img src="./images/model_eusipco_2.png" width="600"/>
 </p>
 
-### 1. Linear Disentangler
+### 2. Linear Disentangler
 
 <p align="center">
   <img src="./images/disentangler.png" width="600"/>
