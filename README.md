@@ -2,6 +2,29 @@
 ---
 In this paper, we propose a novel disentanglement-based one-shot VC model that leverages the linear separability of SSL features. Using only K-means quantization and linear operations, the model effectively disentangles speech attributes, capturing both content and speaker-specific information in a unified framework and achieving high-quality voice conversion with reconstruction losses alone.
 
+
+## Architecture
+
+### 1. Linear Disentangler
+
+<p align="center">
+  <img src="./images/linear_disentangler.png" width="600"/>
+</p>
+
+### 2. Full Model Pipeline
+
+<p align="center">
+  <img src="./images/model_pipeline.png" width="950"/>
+</p>
+
+## Results
+
+<p align="center">
+  <img src="./images/eval_table.png" width="1000"/>
+</p>
+
+---
+
 ## Key Features
 
 - **One-Shot Voice Conversion**: Transforms the speaker identity of a source speech into that of an arbitrary target using only a single utterance.
