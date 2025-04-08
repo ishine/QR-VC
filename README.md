@@ -1,4 +1,4 @@
-# LinearVC: Linear Disentanglement Leveraging Quantization Residuals from Self-Supervised Learning Features for One-Shot Voice Conversion
+# QR-VC: Leveraging Quantization Residuals for Linear Disentanglement in Zero-Shot Voice Conversion
 ---
 In this paper, we propose a novel disentanglement-based one-shot VC model that leverages the linear separability of SSL features. Using only K-means quantization and linear operations, the model effectively disentangles speech attributes, capturing both content and speaker-specific information in a unified framework and achieving high-quality voice conversion with reconstruction losses alone.
 
